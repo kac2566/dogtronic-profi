@@ -179,10 +179,14 @@ Upewnij się, że masz uruchomione:
 
 ### 2. Skopiuj pliki
 
-Skopiuj zawartość repozytorium do folderu:
+Pobierz WordPressa z wordpress.org/download
+Skopiuj zawartość repozytorium do folderu z wordpressem np.:
 - **XAMPP:** `C:\xampp\htdocs\dogtronic-profi`
 - **WAMP:** `C:\wamp64\www\dogtronic-profi`
 - **MAMP:** `/Applications/MAMP/htdocs/dogtronic-profi`
+
+Zastąp folder wp-content w instalacji WordPressa folderem wp-content z repozytorium
+To nadpisze domyślne motywy i wtyczki zawartością projektu
 
 ### 3. Import bazy danych
 
