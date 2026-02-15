@@ -10,6 +10,7 @@ services:
       MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
     volumes:
+      - ./db_init:/docker-entrypoint-initdb.d
       - ./db:/var/lib/mysql
 
   wordpress:
