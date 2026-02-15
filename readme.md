@@ -193,7 +193,7 @@ To nadpisze domyślne motywy i wtyczki zawartością projektu
 1. Otwórz [localhost/phpmyadmin](http://localhost/phpmyadmin)
 2. Utwórz nową bazę: `wp_dogtronic`
 3. Kliknij **Import**
-4. Wybierz plik: `./db/wp_dogtronic.sql`
+4. Wybierz plik: `./db_init/wp_dogtronic.sql`
 5. Kliknij **Wykonaj**
 
 ### 4. Konfiguracja WordPress
