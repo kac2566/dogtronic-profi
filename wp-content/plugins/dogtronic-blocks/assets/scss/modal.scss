@@ -1,0 +1,49 @@
+.dogtronic-video-popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.dogtronic-video-popup-modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dogtronic-video-popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.dogtronic-video-popup-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1;
+  z-index: 100;
+  background-color: #000;
+  border-style: unset;
+}
+
+.dogtronic-video-popup-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

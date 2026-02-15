@@ -1,0 +1,18 @@
+{
+    "name": "dogtronic-blocks/tab-panel",
+    "title": "Tab Panel",
+    "description": "A single tab content panel.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "media-document",
+    "parent": [
+        "dogtronic-blocks/tabs-content"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "tab-panel.php"
+    },
+    "supports": {
+        "align": false,
+        "jsx": true
+    }
+}

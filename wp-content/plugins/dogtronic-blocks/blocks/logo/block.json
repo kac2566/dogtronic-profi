@@ -1,0 +1,18 @@
+{
+    "name": "dogtronic/logo",
+    "title": "Logo",
+    "description": "A custom block that uses ACF fields.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "format-image",
+    "keywords": [
+        "logo",
+        "motyw"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "logo.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

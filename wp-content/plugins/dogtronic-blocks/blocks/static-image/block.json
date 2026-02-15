@@ -1,0 +1,21 @@
+{
+    "name": "dogtronic-blocks/static-image",
+    "title": "Static Image",
+    "description": "A responsive image block with desktop, mobile, and contrast support.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "format-image",
+    "keywords": [
+        "image",
+        "picture",
+        "responsive"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "static-image.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    },
+    "style": "file:./style.css"
+}

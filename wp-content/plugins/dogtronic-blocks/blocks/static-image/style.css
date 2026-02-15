@@ -1,0 +1,16 @@
+/**
+ * Block: Static Image
+ */
+
+.dogtronic-static-image {
+  display: block;
+  width: 100%;
+}
+
+.dogtronic-static-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  /* Ensure it fills the container if needed, or remove if intrinsic size preferred */
+}

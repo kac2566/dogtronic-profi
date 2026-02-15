@@ -1,0 +1,29 @@
+{
+    "name": "dogtronic-blocks/tabs",
+    "title": "SF Tabs",
+    "description": "A tabs block with header and content areas.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "index-card",
+    "keywords": [
+        "tabs",
+        "accordion"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "tabs.php"
+    },
+    "supports": {
+        "align": [
+            "full",
+            "wide"
+        ],
+        "jsx": true
+    },
+    "allowedBlocks": [
+        "dogtronic-blocks/tabs-header",
+        "dogtronic-blocks/tabs-content"
+    ],
+    "editorScript": "file:../../dist/blocks/tabs/index.js",
+    "script": "file:../../dist/blocks/tabs/index.js",
+    "style": "file:../../dist/blocks/tabs/index.css"
+}

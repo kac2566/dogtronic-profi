@@ -1,0 +1,32 @@
+.dogtronic-block-tabs {
+  .dogtronic-tabs-header {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+
+    .dogtronic-tab-title {
+      padding: 0.5rem 1rem;
+      border: 1px solid transparent;
+      border-bottom: none;
+      cursor: pointer;
+      background: none;
+      font-weight: bold;
+
+      &.is-active {
+        border-color: #ddd;
+        border-bottom-color: #fff;
+        margin-bottom: -1px;
+        background: #fff;
+      }
+    }
+  }
+
+  .dogtronic-tabs-content {
+    .dogtronic-tab-panel {
+      &[hidden] {
+        display: none;
+      }
+    }
+  }
+}

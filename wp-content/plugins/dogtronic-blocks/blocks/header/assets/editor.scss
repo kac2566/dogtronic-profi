@@ -1,0 +1,25 @@
+.sf-header {
+    margin: 20px 0;
+    border: 1px dashed #ccc;
+
+    &__nav-desktop {
+        display: block !important; // Show desktop nav in editor
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 10px;
+    }
+
+    &__nav-mobile {
+        display: none !important; // Hide mobile drawer in editor to avoid clutter
+    }
+
+    &__mobile-toggle {
+        display: none !important; // Hide toggle in editor
+    }
+}
+
+// In the editor, ensure InnerBlocks are editable and visible properly
+.sf-header__nav-desktop {
+    .block-editor-inner-blocks {
+        min-height: 50px;
+    }
+}

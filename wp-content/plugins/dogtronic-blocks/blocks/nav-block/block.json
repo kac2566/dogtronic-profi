@@ -1,0 +1,20 @@
+{
+    "name": "dogtronic/nav-block",
+    "title": "Navigation",
+    "description": "A custom block that uses ACF fields.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "menu-alt",
+    "keywords": [
+        "navigation",
+        "motyw",
+        "acf",
+        "header"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "nav-block.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

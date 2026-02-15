@@ -1,0 +1,22 @@
+{
+    "name": "dogtronic-blocks",
+    "version": "1.0.0",
+    "description": "Gutenberg Blocks Build System",
+    "main": "index.js",
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start",
+        "lint:js": "wp-scripts lint-js",
+        "lint:css": "wp-scripts lint-style"
+    },
+    "author": "Kacper Powalka",
+    "license": "GPL-2.0-or-later",
+    "devDependencies": {
+        "@wordpress/scripts": "^26.0.0",
+        "glob": "^10.3.10",
+        "path": "^0.12.7"
+    },
+    "dependencies": {
+        "classnames": "^2.3.2"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "dogtronic-blocks/video-popup",
+    "title": "Video Popup",
+    "description": "A video block that opens in a global popup.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "video-alt3",
+    "keywords": [
+        "video",
+        "popup",
+        "modal"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "video-popup.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+}

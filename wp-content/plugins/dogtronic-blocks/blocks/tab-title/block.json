@@ -1,0 +1,18 @@
+{
+    "name": "dogtronic-blocks/tab-title",
+    "title": "Tab Title",
+    "description": "A single tab button.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "minus",
+    "parent": [
+        "dogtronic-blocks/tabs-header"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "tab-title.php"
+    },
+    "supports": {
+        "align": false,
+        "jsx": false
+    }
+}

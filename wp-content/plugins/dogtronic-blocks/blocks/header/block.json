@@ -1,0 +1,37 @@
+{
+    "name": "dogtronic/header",
+    "title": "dogtronic Header",
+    "description": "A customizable header block with mobile menu support.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "heading",
+    "keywords": [
+        "header",
+        "navigation",
+        "menu"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": [
+            "full"
+        ],
+        "anchor": true,
+        "jsx": true
+    },
+    "attributes": {
+        "logo": {
+            "type": "string"
+        },
+        "sticky": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "textdomain": "dogtronic-blocks",
+    "editorScript": "file:../../dist/blocks/header/index.js",
+    "script": "file:../../dist/blocks/header/index.js",
+    "style": "file:../../dist/blocks/header/style-index.css",
+    "editorStyle": "file:../../dist/blocks/header/index.css"
+}

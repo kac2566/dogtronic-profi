@@ -1,0 +1,22 @@
+{
+    "name": "dogtronic-blocks/tabs-header",
+    "title": "Tabs Header",
+    "description": "Container for tab buttons.",
+    "category": "dogtronic-blocks-ui",
+    "icon": "minus",
+    "parent": [
+        "dogtronic-blocks/tabs"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "tabs-header.php"
+    },
+    "supports": {
+        "align": false,
+        "jsx": true,
+        "inserter": false
+    },
+    "allowedBlocks": [
+        "dogtronic-blocks/tab-title"
+    ]
+}
