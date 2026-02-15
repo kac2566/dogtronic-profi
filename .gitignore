@@ -1,0 +1,12 @@
+# MySQL / InnoDB / tmp files
+db/*.sock
+db/#*
+db/auto.cnf
+db/ibtmp*
+db/ib_buffer_pool
+db/binlog.*
+db/performance_schema/
+db/sys/
+db/mysql/
+*.log
+*.DS_Store
