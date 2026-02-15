@@ -1,0 +1,20 @@
+.editor-styles-wrapper .is-style-max-640,
+.is-style-max-640 {
+  max-width: 640px;
+}
+
+.editor-styles-wrapper .is-style-max-1000,
+.is-style-max-1000 {
+  max-width: 1000px;
+}
+
+.editor-styles-wrapper .is-style-video-title,
+.is-style-video-title {
+  display: inline;
+  font-size: 26px;
+  line-height: 1.5;
+  border-radius: 70px;
+  box-decoration-break: clone;
+  padding: 6px 20px !important;
+  font-weight: 400;
+}

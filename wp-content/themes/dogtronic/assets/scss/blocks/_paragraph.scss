@@ -1,0 +1,24 @@
+.editor-styles-wrapper .is-style-highlight,
+.is-style-highlight {
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 50px;
+  background-color: var(--wp--preset--color--creamy);
+  border: 1px solid var(--wp--preset--color--creamy-dark);
+}
+
+.editor-styles-wrapper .is-style-max-864,
+.is-style-max-864 {
+  max-width: 864px;
+}
+
+.editor-styles-wrapper .is-style-icon-and-text,
+.is-style-icon-and-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  svg {
+    width: 22px;
+  }
+}

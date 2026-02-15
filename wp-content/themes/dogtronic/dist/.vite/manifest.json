@@ -1,0 +1,18 @@
+{
+  "assets/js/main.js": {
+    "file": "main.js",
+    "name": "main",
+    "src": "assets/js/main.js",
+    "isEntry": true
+  },
+  "assets/scss/main.scss": {
+    "file": "style.css",
+    "src": "assets/scss/main.scss",
+    "isEntry": true
+  },
+  "patterns/profi-contact/assets/style.scss": {
+    "file": "patterns/profi-contact/style.css",
+    "src": "patterns/profi-contact/assets/style.scss",
+    "isEntry": true
+  }
+}

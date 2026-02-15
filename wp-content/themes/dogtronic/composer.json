@@ -1,0 +1,24 @@
+{
+    "name": "dogtronic/dogtronic-theme",
+    "description": "Dogtronic - Modern WordPress FSE Theme",
+    "type": "wordpress-theme",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Antigravity",
+            "email": "antigravity@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dogtronic\\": "inc/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

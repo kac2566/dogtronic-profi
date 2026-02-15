@@ -1,0 +1,64 @@
+@use '../abstracts/mixins' as *;
+
+.editor-styles-wrapper .dogtronic-block-tabs,
+.dogtronic-block-tabs {
+  .dogtronic-tabs-header {
+    .acf-innerblocks-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @include mobile-only {
+        justify-content: center;
+      }
+    }
+  }
+
+  .dogtronic-tab-panel {
+    padding: 64px 40px 40px;
+    background-color: var(--wp--preset--color--white);
+    border-radius: 0 32px 32px 32px;
+
+    @include mobile-only {
+      padding: 30px;
+      border-radius: 4px 4px 32px 32px;
+    }
+  }
+
+  .dogtronic-tab-title {
+    padding: 16px 24px 16px 20px;
+    color: var(--wp--preset--color--black);
+    background-color: var(--wp--preset--color--tab-inactive);
+    border-radius: 16px 16px 0 0;
+    font-size: var(--wp--preset--font-size--only-18);
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: #dce2ef;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    text-align: left;
+
+    &:is(.is-active) {
+      background-color: var(--wp--preset--color--white);
+      border-color: var(--wp--preset--color--white);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 50%;
+
+      @include box(14px);
+    }
+
+    &:nth-of-type(odd)::before {
+      background-color: var(--wp--preset--color--purple);
+    }
+
+    &:nth-of-type(even)::before {
+      background-color: var(--wp--preset--color--green);
+    }
+  }
+}

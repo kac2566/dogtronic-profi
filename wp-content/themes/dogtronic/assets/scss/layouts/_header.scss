@@ -1,0 +1,109 @@
+@use '../abstracts/mixins' as *;
+
+.header {
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: #dce2ef;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include box(100%, 1px);
+  }
+
+  .website-logo {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+
+      svg {
+        max-width: 147px;
+        height: 30px;
+      }
+    }
+  }
+
+  .sf-header__nav-desktop .acf-innerblocks-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .wp-block-buttons {
+      margin-left: auto;
+    }
+
+    .navigation-block {
+      &__nav-elements {
+        gap: 24px;
+
+        a {
+          padding: 8px 16px;
+          display: block;
+          border-radius: 4px;
+          line-height: 1.5;
+          font-size: var(--wp--preset--font-szie--only-16);
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .sf-header__nav-mobile {
+    position: absolute;
+    width: 100%;
+    top: calc(100% - 1px);
+    display: none;
+    padding: 64px 20px;
+    z-index: 1050;
+    background-color: #f9faff;
+    height: calc(100dvh - 57px);
+
+    &[aria-hidden='false'] {
+      display: block;
+    }
+
+    .navigation-block {
+      &__nav-elements {
+        gap: 32px;
+        flex-direction: column;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+          padding: 0 12px;
+          display: block;
+          line-height: 1.2;
+          font-size: 32px;
+          font-weight: 400;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .sf-header__nav-mobile-content {
+      height: 100%;
+
+      .acf-innerblocks-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .wp-block-buttons {
+          margin-top: auto;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.admin-bar .header .sf-header__nav-mobile {
+  height: calc(100dvh - 103px);
+}

@@ -1,0 +1,43 @@
+@use './mixins' as *;
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include desktop-only {
+    --wp--style--root--padding-right: 32px;
+    --wp--style--root--padding-left: 32px;
+  }
+
+  @include tablet-only {
+    --wp--style--root--padding-right: 32px;
+    --wp--style--root--padding-left: 32px;
+  }
+
+  @include mobile-only {
+    --wp--style--root--padding-right: 16px;
+    --wp--style--root--padding-left: 16px;
+  }
+}
+
+.wp-block-template-part {
+  margin: 0;
+}
+
+.global-padding {
+  padding-left: var(--wp--style--root--padding-left);
+  padding-right: var(--wp--style--root--padding-right);
+}

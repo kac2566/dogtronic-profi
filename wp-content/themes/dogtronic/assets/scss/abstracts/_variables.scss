@@ -1,0 +1,11 @@
+// Variables
+// Map to theme.json values where possible using CSS variables
+
+:root {
+    --color-primary: var(--wp--preset--color--primary, #0073aa);
+    --color-secondary: var(--wp--preset--color--secondary, #005177);
+    --font-body: var(--wp--preset--font-family--system-font, sans-serif);
+}
+
+$bp-mobile: 768px;
+$bp-desktop: 1024px;

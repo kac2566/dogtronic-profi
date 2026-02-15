@@ -1,0 +1,15 @@
+@use '../../../assets/scss/abstracts/mixins' as *;
+
+.contact-section {
+  &__form-col {
+    border-radius: 32px;
+
+    @include mobile-only {
+      border-radius: 24px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

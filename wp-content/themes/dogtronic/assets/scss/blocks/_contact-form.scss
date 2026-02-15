@@ -1,0 +1,72 @@
+.contact-form {
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--wp--preset--spacing--24);
+
+    &-text {
+      font-size: var(--wp--preset--font-size--only-16);
+      color: var(--wp--preset--color--black);
+      line-height: 1.52;
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__submit-btn {
+    background-color: var(--wp--preset--color--purple-dark);
+    color: var(--wp--preset--color--white);
+    display: flex;
+    align-items: center;
+    font-size: var(--wp--preset--font-size--only-16);
+    line-height: 0.994;
+    min-height: 48px;
+    min-width: 90px;
+    padding: 11px 22px 11px 22px;
+    border-radius: 80px;
+    gap: 8px;
+    border-style: unset;
+    cursor: pointer;
+    margin-top: 32px;
+  }
+
+  p {
+    margin: unset;
+  }
+
+  br {
+    display: none;
+  }
+
+  input:not([type='checkbox']),
+  textarea {
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #dce2ef;
+    background-color: var(--wp--preset--color--white);
+    font-size: var(--wp--preset--font-size--only-16);
+    color: var(--wp--preset--color--black);
+    width: 100%;
+    font-family: inherit;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .wpcf7-not-valid-tip {
+    font-size: 12px;
+  }
+
+  .wpcf7-list-item {
+    margin-left: unset;
+  }
+
+  .wpcf7-acceptance {
+    font-size: var(--wp--preset--font-size--only-14);
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

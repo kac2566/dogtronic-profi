@@ -1,0 +1,92 @@
+// Define breakpoints
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+// Backward compatibility
+$tablet: $md;
+$desktop: $lg;
+
+// =======================
+// MEDIA QUERY MIXINS
+// =======================
+
+@mixin sm-up {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin md-up {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin xl-up {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin not-desktop {
+  @media only screen and (max-width: #{ $desktop - 1px }) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media only screen and (min-width: $tablet) and (max-width:  #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media only screen and (max-width:  #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin not-mobile {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin not-mobile-or-tablet {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin media-custom-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-custom-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+// Box
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

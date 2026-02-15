@@ -1,0 +1,28 @@
+@use '../abstracts/mixins' as *;
+
+.editor-styles-wrapper .is-style-icon-box,
+.is-style-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px;
+
+  @include box(48px);
+
+  figure {
+    margin: 0 !important;
+
+    @include box(24px);
+
+    * {
+      @include box(100%);
+    }
+  }
+}
+
+.editor-styles-wrapper .is-style-max-250,
+.is-style-max-250 {
+  max-width: 250px;
+  margin: unset !important;
+}
